@@ -1,0 +1,10 @@
+/web
+/log
+/htmlcov
+/rhome/settings.py
+.cache
+.project
+.pydevproject
+*.pyc
+~*
+Gemfile.lock
