@@ -2,6 +2,18 @@
 
 
 {% block content %}
-	<div class="sensors"></div>
-	<div class="graph"></div>
+	<div class="pure-g">
+		<div class="pure-u-1-1 pure-u-md-1-2">
+			<div class="graph" title="Wohnzimmer" data-graph="0d7dff-humidity,0d7dff-temperature"></div>
+		</div>
+		<div class="pure-u-1-1 pure-u-md-1-2">
+			<div class="graph" title="Schlafzimmer" data-graph="0d7c13-humidity,0d7c13-temperature"></div>
+		</div>
+		<div class="pure-u-1-1 pure-u-md-1-2">
+			<div class="graph" title="Bad" data-graph="0d7bd3-humidity,0d7bd3-temperature"></div>
+		</div>
+		<div class="pure-u-1-1 pure-u-md-1-2">
+			<h3>Placeholder for more.</h3>
+		</div>
+	</div>
 {% endblock %}
