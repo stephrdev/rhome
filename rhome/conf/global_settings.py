@@ -23,7 +23,9 @@ DATABASES = {
 
 ALLOWED_HOSTS = []
 SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_NAME = 'rhome_sessionid'
 CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_NAME = 'rhome_csrftoken'
 
 SITE_ID = 1
 
@@ -102,6 +104,9 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
     'didadata',
+    'howl',
+
+    'rhome.watchdog.apps.WatchdogConfig',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -146,3 +151,6 @@ LOGGING = {
         'level': 'INFO',
     },
 }
+
+PUSHOVER_TOKEN = ''
+PUSHOVER_RECIPIENT = ''

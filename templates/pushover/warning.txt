@@ -1,0 +1,4 @@
+Time: {{ alert.timestamp|date:"d.m.Y H:i" }}
+
+Current value: {{ value }}{% if observer %}
+Expected value: {{ observer.get_operator_display }} {{ observer.value }}{% endif %}
